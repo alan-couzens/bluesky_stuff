@@ -5,4 +5,6 @@ Some simple example "rules" are given (pull from followers if like threshold exc
 
 You'll want to set up your own SQL database named 'feed_database' to push these favorite posts to & update bluesky_algo.py with your login details. 
 
-That's it for this part. Will add feed.py and the Flask app to serve your feed in a bit. 
+The second file app.py is the app where you'll serve your feed from. You'll want your own domain, ideally with a subdomain e.g. feed.mydomain.com. This is where your SQL database and your app will live. 
+
+Other than that, algos will contain the logic that pulls from your database and you'll get your feed's personal DID to add to your app.py file after running publish_feed.py. Will upload in a bit, but to skip ahead, go to https://github.com/MarshalX/bluesky-feed-generator. It's all there in more detail. 
