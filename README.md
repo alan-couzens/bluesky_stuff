@@ -3,7 +3,7 @@
 The first file - bluesky_algo.py is the main algo script that the user can run (either manually or via cron-job) to pull posts they want to see into a database that feed.py will pull from.
 Some simple example "rules" are given (pull from followers if like threshold exceeded, pull popular posts from keywords), but it's up to the user to add their own to determine what they want to see. This is the fun bit! :)
 
-You'll want to set up your own SQL database named 'feed_database' to push these favorite posts to & update bluesky_algo.py with your login details. 
+You'll want to set up your own SQL database named 'feed_database' to push these favorite posts to & update bluesky_algo.py with your login details. The required columns in your db are: uri, cid, reply_parent, reply_root, indexed_at (see notes on feed.py below)
 
 The second file app.py is the app where you'll serve your feed from. You'll want your own domain, ideally with a subdomain e.g. feed.mydomain.com. This is where your SQL database and your app will live. 
 
