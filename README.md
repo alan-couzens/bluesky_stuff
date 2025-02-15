@@ -1,4 +1,4 @@
-#Bluesky: Build your own personalized social media algo
+# Bluesky: Build your own personalized social media algo
 
 **Random Bluesky related stuff that enables the user to build their own personalized social media algorithm on their own feed.**
 
