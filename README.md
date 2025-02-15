@@ -14,6 +14,7 @@ You can use something like PythonAnywhere to host your app for ~$5/mo. Thye make
 The app.py file serves 3 endpoints that Bluesky needs to be able to publish the posts from your database as a web feed (which you'll be able to view under your feeds on the site)...
 ![bsky_my_feed](https://github.com/user-attachments/assets/e139ed13-aa64-4839-8a58-4e0d7e9a0d08)
 
-The algos folder contains the logic to build the feed from your database into the format that bluesky needs. Your database will need to match the columns shown in feed.py (uri, cid, reply_parent, reply_root, indexed_at)
+
+The algos folder contains the logic to build the feed from your database into the format that Bluesky needs. Your database will need to match the columns shown in feed.py (uri, cid, reply_parent, reply_root, indexed_at)
 
 The final step is to publish your feed via publish_feed.py and add the DID that you get back to your app.py (you only have to do this once). Will upload publish_feed.py in a bit, but to skip ahead just go to https://github.com/MarshalX/bluesky-feed-generator where the whole process is outlined in more detail.  
