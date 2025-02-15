@@ -9,4 +9,8 @@ The second file app.py is the app where you'll serve your feed from. You'll want
 
 You can use something like PythonAnywhere to host your app for ~$5/mo. Thye make deploying a flask app to the web super easy (https://help.pythonanywhere.com/pages/Flask/)
 
-Other than that, algos will contain the logic that pulls from your database and you'll get your feed's personal DID to add to your app.py file after running publish_feed.py. Will upload in a bit, but to skip ahead, go to https://github.com/MarshalX/bluesky-feed-generator. It's all there in more detail. 
+The app serves 3 endpoints that Bluesky needs to be able to publish the posts from your database as a web feed (which you'll be able to view under your feeds on the site)
+
+algos contains the logic to build the feed from your database into the format that bluesky needs. Your database will need to match the columns shown in feed.py (uri, cid, reply_parent, reply_root, indexed_at)
+
+The final step is to publish your feed via publish_feed.py and add the DID that you get back to your app.py (you only have to do this once). Will upload publish_feed.py in a bit, but to skip ahead just go to https://github.com/MarshalX/bluesky-feed-generator where the whole process is outlined in more detail.  
