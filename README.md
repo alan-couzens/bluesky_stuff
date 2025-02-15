@@ -1,3 +1,5 @@
+#Bluesky: Build your own personalized social media algo
+
 **Random Bluesky related stuff that enables the user to build their own personalized social media algorithm on their own feed.**
 
 The first file - bluesky_algo.py is the main algo script that the user can run (either manually or via cron-job) to pull posts they want to see into a database that feed.py will pull from.
@@ -9,7 +11,8 @@ The second file app.py is the app where you'll serve your feed from. You'll want
 
 You can use something like PythonAnywhere to host your app for ~$5/mo. Thye make deploying a flask app to the web super easy (https://help.pythonanywhere.com/pages/Flask/)
 
-The app.py file serves 3 endpoints that Bluesky needs to be able to publish the posts from your database as a web feed (which you'll be able to view under your feeds on the site)
+The app.py file serves 3 endpoints that Bluesky needs to be able to publish the posts from your database as a web feed (which you'll be able to view under your feeds on the site)...
+![bsky_my_feed](https://github.com/user-attachments/assets/e139ed13-aa64-4839-8a58-4e0d7e9a0d08)
 
 algos contains the logic to build the feed from your database into the format that bluesky needs. Your database will need to match the columns shown in feed.py (uri, cid, reply_parent, reply_root, indexed_at)
 
