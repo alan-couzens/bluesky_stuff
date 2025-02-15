@@ -7,4 +7,6 @@ You'll want to set up your own SQL database named 'feed_database' to push these 
 
 The second file app.py is the app where you'll serve your feed from. You'll want your own domain, ideally with a subdomain e.g. feed.mydomain.com. This is where your SQL database and your app will live. 
 
+You can use something like PythonAnywhere to host your app for ~$5/mo. Thye make deploying a flask app to the web super easy (https://help.pythonanywhere.com/pages/Flask/)
+
 Other than that, algos will contain the logic that pulls from your database and you'll get your feed's personal DID to add to your app.py file after running publish_feed.py. Will upload in a bit, but to skip ahead, go to https://github.com/MarshalX/bluesky-feed-generator. It's all there in more detail. 
