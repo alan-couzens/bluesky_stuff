@@ -11,7 +11,7 @@ The second file app.py is the app where you'll serve your feed from. You'll want
 
 You can use something like PythonAnywhere to host your app for ~$5/mo. Thye make deploying a flask app to the web super easy (https://help.pythonanywhere.com/pages/Flask/)
 
-The app.py file serves 3 endpoints that Bluesky needs to be able to publish the posts from your database as a web feed (which you'll be able to view under your feeds on the site)...
+The app.py file serves 3 endpoints that Bluesky needs to be able to publish the posts from your database as a web feed. Once these endpoints are live on your server, you'll be able to view your personalized feed of posts that are pulled according to your own algorithm's rules under feeds on the site)...
 ![bsky_my_feed](https://github.com/user-attachments/assets/e139ed13-aa64-4839-8a58-4e0d7e9a0d08)
 
 
