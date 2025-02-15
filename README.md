@@ -1,4 +1,4 @@
-Random Bluesky related stuff that enables the user to build their own personalized social media algorithm on their own feed.
+**Random Bluesky related stuff that enables the user to build their own personalized social media algorithm on their own feed.**
 
 The first file - bluesky_algo.py is the main algo script that the user can run (either manually or via cron-job) to pull posts they want to see into a database that feed.py will pull from.
 Some simple example "rules" are given (pull from followers if like threshold exceeded, pull popular posts from keywords), but it's up to the user to add their own to determine what they want to see.
