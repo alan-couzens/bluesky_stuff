@@ -10,7 +10,7 @@ def get_user_did(client, handle):
     profile = client.app.bsky.actor.get_profile(params={'actor': handle})
     user_did = profile.did
     print(f"User DID: {user_did}")
-    return 
+    return user_did
     
 def pull_followers_for_user(client, did):
     """Pulls followers for a user."""
