@@ -17,4 +17,8 @@ The app.py file serves 3 endpoints that Bluesky needs to be able to publish the 
 
 The algos folder contains the logic to build the feed from your database into the format that Bluesky needs. Your database will need to match the columns shown in feed.py (uri, cid, reply_parent, reply_root, indexed_at)
 
-The final step is to publish your feed via publish_feed.py and add the DID that you get back to your app.py (you only have to do this once). Will upload publish_feed.py in a bit, but to skip ahead just go to https://github.com/MarshalX/bluesky-feed-generator where the whole process is outlined in more detail.  
+The final step is to publish your feed via publish_feed.py. To do this, go into the .env file, replace all the variables with your details - what you want to call your feed etc. The publish_feed.py file will pull from the info you provide here. Once you run publish_feed.py (as a one time deal) it will return a unique DID for your feed. Once you've got this, go back into your app.py file and plug that DID into the feed_url variable. 
+
+Once you've done that, you can serve your app.py file from your server and your personalized algorithmic feed will just magically show up on your Bluesky app. Every time you run your bluesky_algo.py script (either manually or via cronjob) it will pull new posts into your database and they will be served to your feed. You can change the rules in bluesky_algo.py as you go in accordance with your preferences. 
+
+That's pretty much it! For more detail & a slightly different approach (that pulls feeds into your DB directly from the "Firehose" of all posts), check out https://github.com/MarshalX/bluesky-feed-generator
